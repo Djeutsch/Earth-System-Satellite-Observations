@@ -2,7 +2,7 @@
     <h1> Land Cover and Land Use Clustering</h1>
 </center>
 
-## Project overview and domain knowledge
+## Project overview
 
 The primary problem with automatic extraction of individual land cover areas from a single index raster is the determination of the threshold value (Gasporovic et al., 2019). Index value ranges for different land cover types fall in certain ranges and are specific to each satellite imagery scene (Lee et al., 2011). Determining thresholds for separation of individual land cover types in each satellite image is a difficult and lengthy process (Gasporovic et al., 2019).
 
@@ -12,7 +12,7 @@ The remaining of the activity is structured as follows. Data engineering is perf
 
 
 
-<h2><br>Data and Methodology</h2>
+<h2><br>Domain Knowledge: data and methodology</h2>
 
 <h3><br>Data source and Characteristics</h3>
 
@@ -125,7 +125,10 @@ All these challenges were overcome through research and a brief review of litera
 ├── figures
 ├── README.md
 ├── requirements.txt
+├── notebooks
 └── scripts
+    ├── utils
+    └── visualisation
 ```
 Setting up the workspace is the first and most important step while working on a project in DS/ML/AI. The workspace folder is thus the most important one to note. This is the folder where all the magic will happen. It contains four folders, one `.txt` file and one `.md` file.
 
