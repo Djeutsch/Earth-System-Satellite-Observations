@@ -2,11 +2,11 @@
     <h1> Land Cover and Land Use Clustering</h1>
 </center>
 
-## Overview of the Challenge
+## Project overview and domain knowledge
 
 The primary problem with automatic extraction of individual land cover areas from a single index raster is the determination of the threshold value (Gasporovic et al., 2019). Index value ranges for different land cover types fall in certain ranges and are specific to each satellite imagery scene (Lee et al., 2011). Determining thresholds for separation of individual land cover types in each satellite image is a difficult and lengthy process (Gasporovic et al., 2019).
 
-The main goal of this excercice is to develop a Land Cover Classification model in a collaboration-ready manner. Basically, the model includes at least the five basic land cover types: Water, Natural Vegetation, Agricultural Fields, Bare Ground, Urban or Built-up land cover like roads and buildings. 
+The main goal of this project is to develop a Land Cover Classification model in a collaboration-ready manner. Basically, the model includes at least the five basic land cover types: Water, Natural Vegetation, Agricultural Fields, Bare Ground, Urban or Built-up land cover like roads and buildings. 
 
 The remaining of the activity is structured as follows. Data engineering is performed provided dataset to explore the way this data is going to be preprocessed in order to meet the goal. Then a model is generate for Land Cover clustering or unsupervised classification. The methodology of this model is briefly documented including a short explanation of the challenges encountered and their work-around. The results over the test set are presented. Then, a baseline model to test this approach against is provided including two accuracy metrics to compare the two models. Finally, a next step plan on how this land cover model could be expanded and developed further.
 
@@ -45,7 +45,7 @@ The [dataset](https://drive.google.com/drive/folders/18kvoIxcWQAFYO16wjclRI3yuEJ
 
 
 
-<h3><br>LCC model</h3>
+<h3><br>LCC modelling</h3>
 
 Unsupervised machine learning (ML) is becoming increasing useful in extracting a specific type of land cover. For many decades, K-Means algorithm has been one of the most used clustering algorithms, mainly because of its good time performance. However, with the increasing of the size of datasets being analyzed, K-Means is seeing its attractiveness being replaced by its variant Mini Batch K-Means, because of K-Means constraint of requiring the entire dataset in memory during its training.
 
@@ -113,6 +113,9 @@ All these challenges were overcome through research and a brief review of litera
 <h3><br>How to use this LCC model (to be improved)</h3>
 
 <br>In this section, a description is provided on how to use this Land Cover Clustering and Classification model. To start, the project directory is basically structured as follows.
+```bash
+
+```
 ```bash
 ├── data-in
 │   ├── test
